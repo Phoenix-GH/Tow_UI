@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Towslip</string>
+
+    <string name="title_section1">Settings</string>
+    <string name="title_section2">Log Out</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="preference_file_key">Theme Preference</string>
+    <string name="dark_selected">dark_selected</string>
+
+    <!--Login page -->
+    <string name="username_placeholder">Username</string>
+    <string name="password_placeholder">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Login</string>
+
+    <string name= "vehicle_details">VEHICLE DETAILS</string>
+    <string name="menu_title">Akio Yamadera</string>
+    <string name="menu_subtitle">Administrator\nEiji Kimura</string>
+
+    <string name="dummy_text1">ABC Apartment</string>
+    <string name="dummy_text2">Washington 12089 - St, Steven 3XE4</string>
+    <string name="dummy_text3">10:30AM at Oct 12, 2016</string>
+    <string name="dummy_text4">03’ Infiniti G35 (Gray)</string>
+    <string name="dummy_text5">Return To Tow Date:  16th Mar 2016</string>
+    <string name="dummy_text6">by Jonson</string>
+    <string name="dummy_text7">Wellington 1192</string>
+    <string name="dummy_text8"></string>
+    <string name = "incorrect_password">Incorrect credentials, try again.</string>
+    <string name = "login_error">Login failed!</string>
+    <string name = "error">An error has occured.</string>
+
+    <string name = "loading_failed">Loading failed!</string>
+
+    <string name = "update_success">Successfully updated!</string>
+</resources>

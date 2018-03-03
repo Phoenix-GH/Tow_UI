@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:background="?attr/colorBackgroundFloating">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/logo_top_margin"
+        android:paddingTop="@dimen/logo_top_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/logo_top_margin"
+            android:layout_marginRight="@dimen/logo_top_margin"
+            android:gravity="center_vertical"
+            android:id="@+id/apartment_row_title"
+            android:textColor="?attr/colorPrimaryDark"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/apartment_row_title"
+            android:text="@string/dummy_text1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected"
+            android:id="@+id/badge_selected"
+            android:background="@drawable/badge_background"
+            android:textColor="#ffffff"
+            android:layout_marginRight="@dimen/logo_top_margin"
+            android:textSize="@dimen/apartment_badge_text"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_text2"
+        android:layout_marginLeft="@dimen/vehicle_row_subtitle_left_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textStyle="italic"
+        android:id="@+id/apartment_row_text"
+        android:layout_marginBottom="@dimen/logo_top_margin"
+        android:textSize="@dimen/apartment_row_text"/>
+
+</LinearLayout>

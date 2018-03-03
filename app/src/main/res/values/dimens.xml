@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="logo_top_margin">10dp</dimen>
+    <dimen name="logo_side_margin">50dp</dimen>
+    <dimen name="button_spacing">5dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="topbar_icon_size">20dp</dimen>
+    <dimen name="menu_title_size">30dp</dimen>
+    <dimen name="menu_subtitle_size">15dp</dimen>
+    <dimen name="menu_subtitle_padding">50dp</dimen>
+    <dimen name="menu_image_size">30dp</dimen>
+
+    <dimen name="main_margin_size">10dp</dimen>
+    <dimen name="search_bar_height">30dp</dimen>
+    <dimen name="vehicle_row_subtitle_left_margin">30dp</dimen>
+    <dimen name="vehicle_row_badge_width">50dp</dimen>
+    <dimen name="vehicle_row_spacing">10dp</dimen>
+    <dimen name="toolbarHeight">50dp</dimen>
+
+    <dimen name="checkboxtext_size">14dp</dimen>
+
+    <dimen name="thumb_width">50dp</dimen>
+    <dimen name="checkbox_spacing">5dp</dimen>
+    <!-- Font size -->
+    <dimen name="apartment_row_title">15dp</dimen>
+    <dimen name="apartment_row_text">12dp</dimen>
+    <dimen name="apartment_badge_text">10dp</dimen>
+
+    <dimen name="vehicle_row_title">15dp</dimen>
+    <dimen name="vehicle_row_text">10.5dp</dimen>
+
+    <dimen name="history_row_title">14.59dp</dimen>
+    <dimen name="history_sub_title">10.54dp</dimen>
+    <dimen name="history_badge">14.59dp</dimen>
+    <dimen name="history_row_text">11.35dp</dimen>
+
+    <dimen name="bar_title_size">16dp</dimen>
+    <dimen name="bar_subtitle_size">10dp</dimen>
+    <dimen name="tab_banner_height">40dp</dimen>
+    <dimen name="add_button_height">55dp</dimen>
+    <dimen name="button_text_size">12dp</dimen>
+    <dimen name="bar_button_size">14dp</dimen>
+
+
+
+</resources>

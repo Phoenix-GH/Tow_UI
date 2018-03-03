@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tow_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="?attr/colorPrimary"
+        android:focusable="false"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-10dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/menu_title_size"
+                android:layout_height="@dimen/menu_title_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/back"
+                android:tint="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="SETTINGS"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="@dimen/bar_title_size"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Theme : "
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <Spinner
+                android:id="@+id/theme_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/theme_arrays"></Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Theme"
+            android:textColor="?attr/colorPrimaryDark"
+            >
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+

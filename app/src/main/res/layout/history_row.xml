@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vehicle_row_background"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/logo_top_margin">
+
+        <TextView
+            android:id="@+id/vehicle_badge"
+            android:layout_width="@dimen/vehicle_row_badge_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_badge_background"
+            android:gravity="center"
+
+            android:text="1500"
+            android:textColor="#ffffff"
+            android:layout_gravity="top"
+            android:textSize="@dimen/history_row_title"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/logo_top_margin"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/date_badge"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/dummy_text3"
+                android:textColor="@color/badge_color"
+                android:textSize="@dimen/history_sub_title"/>
+
+            <TextView
+                android:id="@+id/date_subbadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/dummy_text6"
+                android:textColor="@color/badge_color"
+                android:textSize="@dimen/history_sub_title"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/history_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/logo_top_margin"
+        android:layout_marginLeft="@dimen/logo_top_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+
+        android:text="@string/dummy_text4"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="@dimen/history_row_title"/>
+
+    <TextView
+        android:id="@+id/history_sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/logo_top_margin"
+        android:layout_marginLeft="@dimen/logo_top_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+        android:textSize="@dimen/history_sub_title"
+        android:text="@string/dummy_text7"
+        android:textColor="?attr/subtitleTextColor" />
+
+    <TextView
+        android:id="@+id/history_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/logo_top_margin"
+        android:layout_marginLeft="@dimen/logo_top_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+        android:text="@string/dummy_text8"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textSize="@dimen/history_row_text"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vehicle_row_spacing"
+        android:background="?attr/colorPrimary" />
+</LinearLayout>

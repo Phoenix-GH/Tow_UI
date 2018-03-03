@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/mainView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/main_margin_size"
+            android:layout_marginRight="@dimen/main_margin_size"
+            android:background="@drawable/banner_back"
+            android:layout_marginTop="@dimen/main_margin_size"
+            android:layout_marginBottom="@dimen/main_margin_size"
+            android:paddingTop="@dimen/button_spacing"
+            android:paddingBottom="@dimen/button_spacing"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/search_background"
+            android:elegantTextHeight="false"
+            android:background="@drawable/banner_back"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:nextFocusUp="@id/search_text"
+            android:nextFocusLeft="@id/search_text"
+           />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/clear"
+                android:adjustViewBounds="true"
+                android:id="@+id/btn_clear"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/main_margin_size"
+            android:drawSelectorOnTop="true"
+            android:layout_marginRight="@dimen/main_margin_size"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="bottom"
+        android:background="?attr/colorAccent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/home"
+                android:id="@+id/home_image"
+                android:tint="?attr/colorControlActivated" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="History"
+                android:id="@+id/home_text"
+                android:textColor="?attr/colorControlActivated" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/vehicle_list"
+                android:id="@+id/list_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Vehicle List"
+                android:id="@+id/list_text"
+                android:textColor="@color/unselected_tab_bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/accounts"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Accounts"
+                android:textColor="@color/unselected_tab_bar"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

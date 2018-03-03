@@ -1,0 +1,37 @@
+<resources>
+    <string-array name="spinnerItems">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+    </string-array>
+    <string-array name="theme_arrays">
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+
+    <string-array name="color_array">
+        <item>Beige</item>
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Bronze</item>
+        <item>Brown</item>
+        <item>Burgundy</item>
+        <item>Champagne</item>
+        <item>Gold</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Maroon</item>
+        <item>Navy</item>
+        <item>Orange</item>
+        <item>Other</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Red</item>
+        <item>Silver</item>
+        <item>Tan</item>
+        <item>Teal</item>
+        <item>White</item>
+        <item>Yellow</item>
+    </string-array>
+</resources>

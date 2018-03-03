@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Notitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/light_backcolor</item>
+        <item name="colorAccent">@color/light_backcolor2</item>
+        <item name="colorPrimaryDark">@color/vehicle_list_row_light_color</item>
+        <item name="colorBackgroundFloating">@color/list_light_background</item>
+        <item name="panelBackground">@color/list_light_background2</item>
+        <item name="subtitleTextColor">#838A91</item>
+
+        <item name="colorControlNormal">#babcc0</item>
+        <item name="colorControlActivated">@color/vehicle_list_row_light_color</item>
+        <item name="colorControlHighlight">@color/badge_color</item>
+        <item name="colorButtonNormal">#ebebeb</item>
+        <item name="textColorAlertDialogListItem">#585e65</item>
+        <item name="android:textColorHint">@color/vehicle_list_row_light_color</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/dark_backcolor</item>
+        <item name="colorAccent">@color/dark_backcolor2</item>
+        <item name="colorPrimaryDark">@color/vehicle_list_row_dark_color</item>
+        <item name="colorBackgroundFloating">@color/list_dark_background</item>
+        <item name="panelBackground">@color/list_dark_background2</item>
+        <item name="subtitleTextColor">#CBD2DA</item>
+
+        <item name="colorControlNormal">#88ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="colorControlHighlight">@color/vehicle_list_row_dark_color</item>
+        <item name="android:textColorHint">@color/vehicle_list_row_dark_color</item>
+        <item name="textColorAlertDialogListItem">#ffffff</item>
+        <item name="colorButtonNormal">#1476A8</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="NobarLightTheme" parent="@style/LightTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NobarDarkTheme" parent="@style/DarkTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">?attr/colorPrimary</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:displayOptions">showTitle|showHome|homeAsUp</item>
+        <item name="android:icon">?attr/colorPrimaryDark</item>
+        <item name="android:tint">?attr/colorPrimaryDark</item>
+    </style>
+
+
+</resources>

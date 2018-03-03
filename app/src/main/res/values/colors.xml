@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_text_color">#ffffff</color>
+    <color name="text_border_color">#e2e2e2</color>
+    <color name="side_backcolor">#1E3335</color>
+
+    <color name="dark_backcolor2">#24343d</color>
+    <color name="light_backcolor2">#d9d9d9</color>
+    <color name="light_backcolor">#f1efef</color>
+    <color name="dark_backcolor">#0d222d</color>
+    <color name="menu_background">#1e3335</color>
+
+    <color name="menu_item_textcolor">#ffffff</color>
+
+    <color name="badge_color">#46b864</color>
+    <color name="vehicle_list_row_light_color">#585e65</color>
+    <color name="vehicle_list_row_dark_color">#fefefe</color>
+    <color name="list_light_background">#f6f7f7</color>
+    <color name="list_dark_background">#000000</color>
+
+    <color name="list_light_background2">#ffffff</color>
+    <color name="list_dark_background2">#242222</color>
+    <color name = "add_vehicle_sub_color">#c1c6cc</color>
+    <color name="unselected_tab_bar">#9c9fa3</color>
+</resources>

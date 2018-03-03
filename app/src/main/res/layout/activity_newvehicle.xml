@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vehicle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="?attr/colorPrimary"
+        android:focusable="false"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-10dp">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/menu_title_size"
+                android:layout_height="@dimen/menu_title_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/back"
+                android:tint="?attr/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:minWidth="100dp">
+
+                <TextView
+                    android:id="@+id/bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:gravity="center"
+                    android:text="Meadows Place Senior Village"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/bar_title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bar_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#ffffff"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+
+                    android:text="NewYork 1293, ST, Steven"
+                    android:textColor="@color/add_vehicle_sub_color"
+                    android:textSize="@dimen/bar_subtitle_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/btn_location"
+                android:layout_width="@dimen/topbar_icon_size"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/location"
+                android:text="Done"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:tint="?attr/colorPrimaryDark" />
+            <ImageView
+                android:id="@+id/btn_save_draft"
+                android:layout_width="@dimen/topbar_icon_size"
+                android:layout_height="wrap_content"
+
+
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/copy"
+                android:text="Done"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btn_location"
+                android:layout_marginRight="@dimen/button_spacing"
+                android:adjustViewBounds="true"
+                android:tint="?attr/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/logo_top_margin"
+            android:paddingLeft="@dimen/main_margin_size"
+            android:paddingRight="@dimen/main_margin_size"
+            android:paddingTop="@dimen/logo_top_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vehicle_row_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_banner_height"
+                    android:background="@drawable/banner_back"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/main_margin_size"
+                    android:text="Date"
+                    android:textColor="?attr/textColorAlertDialogListItem"
+                    android:textSize="@dimen/history_row_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_banner_height"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/main_margin_size">
+
+                    <TextView
+                        android:id="@+id/date1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/tab_banner_height"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/main_margin_size"
+                        android:text="Stick Date"
+                        android:textColor="?attr/textColorAlertDialogListItem"
+                        android:textSize="@dimen/history_row_title" />
+
+                    <TextView
+                        android:id="@+id/date_value1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/tab_banner_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/main_margin_size"
+                        android:textColor="@color/add_vehicle_sub_color"
+                        android:textSize="@dimen/history_row_title"
+                        android:textStyle="italic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:id="@+id/stick_date_calendar"
+                        android:background="?attr/selectableItemBackground"
+                        android:tint="?attr/colorPrimaryDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tab_banner_height"
+                    android:background="?attr/colorBackgroundFloating"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/main_margin_size">
+
+                    <TextView
+                        android:id="@+id/date2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/tab_banner_height"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/main_margin_size"
+                        android:text="Tow Date"
+                        android:textColor="?attr/textColorAlertDialogListItem"
+                        android:textSize="@dimen/history_row_title" />
+
+                    <TextView
+                        android:id="@+id/date_value2"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/tab_banner_height"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/main_margin_size"
+                        android:textColor="@color/add_vehicle_sub_color"
+                        android:textSize="@dimen/history_row_title"
+                        android:textStyle="italic" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:id="@+id/tow_date_calendar"
+                        android:background="?attr/selectableItemBackground"
+                        android:tint="?attr/colorPrimaryDark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/add_button_height"
+                android:layout_marginTop="@dimen/main_margin_size"
+                android:background="@drawable/banner_back"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/btn_touch_to_add"
+                android:clickable="true"
+
+                >
+                <ImageView
+                    android:layout_width="@dimen/history_row_title"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus"
+                    android:adjustViewBounds="true"
+                    android:tint="?attr/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/touch_to_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/tab_banner_height"
+
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/main_margin_size"
+                    android:text="Touch To Add"
+                    android:textColor="?attr/textColorAlertDialogListItem"
+                    android:textSize="@dimen/history_row_title" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_margin_size"
+                android:id="@+id/vehicle_list"
+                android:divider="@null"
+                android:dividerHeight="0dp">
+
+            </ListView>
+        </LinearLayout>
+
+</LinearLayout>

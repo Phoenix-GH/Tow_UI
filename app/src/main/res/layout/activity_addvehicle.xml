@@ -1,0 +1,569 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vehicle_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="?attr/colorPrimary"
+        android:focusable="false"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/menu_title_size"
+                android:layout_height="@dimen/menu_title_size"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/back"
+                android:tint="?attr/colorPrimaryDark"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textSize="@dimen/bar_title_size"
+                android:text="ADD VEHICLE"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:textSize="@dimen/bar_button_size"
+                android:text="Done"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/logo_top_margin"
+            android:paddingLeft="@dimen/main_margin_size"
+            android:paddingRight="@dimen/main_margin_size"
+            android:id="@+id/main_layout"
+            android:paddingTop="@dimen/logo_top_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_top_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/vehicle_info_icon"
+                    android:layout_width="@dimen/menu_image_size"
+                    android:layout_height="@dimen/menu_image_size"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center_vertical"
+                    android:src="@drawable/sedan"  />
+
+                <TextView
+                    android:id="@+id/vehicle_info_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/logo_top_margin"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Vehicle Information"
+                    android:textColor="?attr/colorPrimaryDark" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/make_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Make / Model :"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <AutoCompleteTextView
+                android:id="@+id/make_model_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Color :"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/color_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/license_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="License Plate :"
+                android:textColor="?attr/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/license_place_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="?attr/colorPrimaryDark"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:maxLength="8"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textVisiblePassword|text|textNoSuggestions"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_top_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/reason_icon"
+                    android:layout_width="@dimen/menu_image_size"
+                    android:layout_height="@dimen/menu_image_size"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center_vertical"
+                    android:src="@drawable/handpen" />
+
+                <TextView
+                    android:id="@+id/reason_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/logo_top_margin"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Reasons"
+                    android:textColor="?attr/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/main_margin_size">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Inspired Inspection"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason1" />
+                    <CheckBox
+
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Expired Plats"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason3" />
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Flat Tires"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason5" />
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Inoperable"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason7" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/main_margin_size">
+
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Wrecked"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason2" />
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="On Blocks"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason4" />
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Missing Parts"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason6" />
+                    <CheckBox
+                        android:paddingLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:text="Abandoned"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/checkboxtext_size"
+                        android:layout_marginBottom="@dimen/checkbox_spacing"
+                        android:buttonTint="?attr/colorPrimaryDark"
+                        android:id="@+id/reason8" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_top_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/main_margin_size">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:text="Other :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="@dimen/checkboxtext_size"
+                    android:buttonTint="?attr/colorPrimaryDark"
+                    android:id="@+id/reason9" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textSize="@dimen/checkboxtext_size"
+                    android:textColor="?attr/colorPrimaryDark"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/logo_top_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/photos_icon"
+                    android:layout_width="@dimen/menu_image_size"
+                    android:layout_height="@dimen/menu_image_size"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center_vertical"
+                    android:src="@drawable/photos" />
+
+                <TextView
+                    android:id="@+id/photos_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/logo_top_margin"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Photos"
+                    android:textColor="?attr/colorPrimaryDark" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_margin_size"
+                android:layout_marginLeft="@dimen/main_margin_size"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout1"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image1"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton1"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout2"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image2"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton2"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout3"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image3"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton3"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin_size"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout4"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image4"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton4"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout5"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image5"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton5"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin_size"
+                    android:layout_marginRight="@dimen/main_margin_size"
+                    android:layout_weight="1"
+                    android:id="@+id/imagelayout6"
+                    >
+                    <ImageView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/main_margin_size"
+                        android:layout_marginTop="@dimen/main_margin_size"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/image_border"
+
+                        android:id="@+id/image6"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/minusclose"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:id="@+id/closebutton6"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Photos"
+                android:id="@+id/btn_addphotos"
+                android:textColor="?attr/colorPrimaryDark"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

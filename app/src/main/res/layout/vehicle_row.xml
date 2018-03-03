@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vehicle_row_background"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/logo_top_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/vehicle_row_badge_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_badge"
+            android:textColor="#ffffff"
+            android:text="1"
+            android:background="@drawable/number_badge_background"
+
+            android:gravity="center"
+            android:textSize="@dimen/vehicle_row_title"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text3"
+            android:id="@+id/date_badge"
+            android:textSize="@dimen/vehicle_row_text"
+            android:textColor="@color/badge_color"
+            android:layout_marginRight="@dimen/logo_top_margin"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_text4"
+        android:layout_marginLeft="@dimen/logo_top_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="@dimen/vehicle_row_title"
+        android:id="@+id/vehicle_row_title"
+        android:layout_marginBottom="@dimen/logo_top_margin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_text5"
+        android:layout_marginLeft="@dimen/vehicle_row_subtitle_left_margin"
+        android:layout_marginRight="@dimen/logo_top_margin"
+        android:textColor="?attr/subtitleTextColor"
+        android:id="@+id/vehicle_row_text"
+        android:layout_marginBottom="@dimen/logo_top_margin"
+        android:textStyle="italic"
+        android:textSize="@dimen/vehicle_row_text"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vehicle_row_spacing"
+        android:background="?attr/colorPrimary"/>
+</LinearLayout>
